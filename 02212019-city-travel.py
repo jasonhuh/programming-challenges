@@ -25,7 +25,7 @@ days = math.ceil(S / X) # S is the total distance, and X is the distance that ca
 import math
 
 def solve(S, X, N, ar):
-    ar.sort()
+    ar.sort() # Sort by the days
     if N == 0:
         return math.ceil(S / X)
     cur_day, so_far = 0, 0
